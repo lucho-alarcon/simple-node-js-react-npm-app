@@ -1,23 +1,3 @@
-// pipeline {
-//     agent any
-//     environment {
-//         CI = 'true'
-//     }
-//     stages {
-//         stage('Build FirstName') {
-//             steps {
-//                 echo 'Lucho'
-//             }
-//         }
-//         stage('Build LastName') {
-//             steps {
-//                 echo 'Alarcon'
-//             }
-//         }
-//    }
-// }
-
-
 pipeline {
 
   agent any
@@ -51,6 +31,7 @@ pipeline {
     stage('build') {
       steps {
          echo 'build here!'
+         sh 'docker ps'
         // dir('frontend') {
         //   script {
         //     try {

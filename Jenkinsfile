@@ -13,14 +13,14 @@ pipeline {
     string(name: 'container_port', defaultValue: '80', description: 'Puerto que usa el contenedor')
   }
 
-  environment {
-      // DOCKER_HOST = "tcp://your-docker-host:2376"
-      // DOCKER_CERT_PATH = "/path/to/docker/certs"
-      // DOCKER_TLS_VERIFY = "1"
-      DOCKER_HOST = "tcp://docker:2376"
-      DOCKER_CERT_PATH = "/certs/client"
-      DOCKER_TLS_VERIFY = "1"
-  }
+  // environment {
+  //     // DOCKER_HOST = "tcp://your-docker-host:2376"
+  //     // DOCKER_CERT_PATH = "/path/to/docker/certs"
+  //     // DOCKER_TLS_VERIFY = "1"
+  //     DOCKER_HOST = "tcp://docker:2376"
+  //     DOCKER_CERT_PATH = "/certs/client"
+  //     DOCKER_TLS_VERIFY = "1"
+  // }
 
   stages {
 

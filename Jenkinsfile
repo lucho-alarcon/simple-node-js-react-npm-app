@@ -8,8 +8,7 @@ pipeline {
                 echo 'Lucho' 
             }
         }
-    }
-
+    },
     stages {
         stage('Build LastName') { 
             steps {

@@ -31,7 +31,13 @@ pipeline {
     stage('build') {
       steps {
          echo 'build here!'
-         sh 'docker ps'
+         script {
+          try {
+            sh 'docker ps'
+          } catch (Exception e) {
+            echo 'Exception occurred HERE: ' + e.toString()
+          }
+         }
         // dir('frontend') {
         //   script {
         //     try {
